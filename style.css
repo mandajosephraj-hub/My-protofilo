@@ -184,3 +184,9 @@ section p {
         padding: 20px 15px;
     }
     }
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* round photo kosam */
+  object-fit: cover;
+}
