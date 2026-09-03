@@ -1,15 +1,29 @@
-body {
-    font-family: Arial, sans-serif;
+/* ===== GENERAL ===== */
+* {
+    box-sizing: border-box;
     margin: 0;
-    background: #f4f7fb;
-    color: #222;
+    padding: 0;
 }
 
-/* Navigation bar */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* ===== NAVIGATION ===== */
 nav {
-    background: #222;
-    padding: 18px 10px;
+    background: #111827;
+    padding: 15px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav a {
@@ -17,96 +31,156 @@ nav a {
     text-decoration: none;
     margin: 0 12px;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #60a5fa;
 }
 
-/* Header */
+/* ===== HEADER ===== */
 header {
-    background: #222;
+    background: linear-gradient(135deg, #111827, #2563eb);
     color: white;
     text-align: center;
-    padding: 55px 20px;
+    padding: 70px 20px;
 }
 
 header h1 {
-    font-size: 40px;
-    margin: 0 0 10px;
+    font-size: 42px;
+    margin-bottom: 10px;
 }
 
-/* Sections */
+header p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* ===== SECTIONS ===== */
 section {
-    max-width: 700px;
-    margin: 30px auto;
-    padding: 25px;
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 35px;
     background: white;
-    border-radius: 15px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    color: #1d4ed8;
+    margin-bottom: 20px;
+    font-size: 28px;
 }
 
-h2 {
-    margin-bottom: 15px;
+section p {
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-p {
-    font-size: 17px;
-    line-height: 1.6;
+/* ===== SKILLS ===== */
+#skills p {
+    display: inline-block;
+    background: #eff6ff;
+    color: #1d4ed8;
+    padding: 10px 18px;
+    margin: 6px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-/* Projects */
+#skills p:hover {
+    transform: translateY(-4px);
+    background: #dbeafe;
+}
+
+/* ===== PROJECTS ===== */
 .project {
-    background: #f4f7fb;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 10px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 25px;
+    margin: 18px 0;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    border-color: #60a5fa;
 }
 
 .project h3 {
-    margin-top: 0;
+    text-align: center;
+    color: #1e40af;
+    margin-bottom: 10px;
+    font-size: 21px;
 }
 
-/* Contact links */
-section a {
-    color: #333;
+.project p {
+    color: #555;
 }
 
-/* Mobile */
+/* ===== CONTACT ===== */
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    margin: 12px 0;
+}
+
+#contact a {
+    color: #2563eb;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* ===== MOBILE ===== */
 @media (max-width: 600px) {
+
     nav {
         padding: 12px 5px;
     }
 
     nav a {
-        display: inline-block;
-        margin: 5px 7px;
+        margin: 0 5px;
         font-size: 14px;
+    }
+
+    header {
+        padding: 55px 15px;
     }
 
     header h1 {
         font-size: 32px;
     }
 
-    section {
-        margin: 20px 10px;
+    header p {
+        font-size: 16px;
     }
-}
-body nav {
-    background-color: #222 !important;
-    padding: 15px !important;
-    text-align: center !important;
-    display: block !important;
-}
 
-body nav a {
-    color: white !important;
-    text-decoration: none !important;
-    margin: 0 12px !important;
-    font-weight: bold !important;
-}
+    section {
+        margin: 20px 12px;
+        padding: 25px 18px;
+    }
 
-body nav a:hover {
-    text-decoration: underline !important;
-}
+    section h2 {
+        font-size: 24px;
+    }
+
+    #skills p {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+    }
+
+    .project {
+        padding: 20px 15px;
+    }
+    }
