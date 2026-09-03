@@ -5,18 +5,38 @@ body {
     color: #222;
 }
 
+/* Navigation bar */
+nav {
+    background: #222;
+    padding: 18px 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
 header {
     background: #222;
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 55px 20px;
 }
 
 header h1 {
     font-size: 40px;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
 }
 
+/* Sections */
 section {
     max-width: 700px;
     margin: 30px auto;
@@ -24,6 +44,7 @@ section {
     background: white;
     border-radius: 15px;
     text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
 h2 {
@@ -35,9 +56,40 @@ p {
     line-height: 1.6;
 }
 
+/* Projects */
 .project {
     background: #f4f7fb;
-    padding: 15px;
+    padding: 20px;
     margin: 15px 0;
     border-radius: 10px;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+/* Contact links */
+section a {
+    color: #333;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    nav {
+        padding: 12px 5px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 7px;
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    section {
+        margin: 20px 10px;
+    }
 }
