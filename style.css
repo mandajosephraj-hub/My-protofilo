@@ -93,3 +93,20 @@ section a {
         margin: 20px 10px;
     }
 }
+body nav {
+    background-color: #222 !important;
+    padding: 15px !important;
+    text-align: center !important;
+    display: block !important;
+}
+
+body nav a {
+    color: white !important;
+    text-decoration: none !important;
+    margin: 0 12px !important;
+    font-weight: bold !important;
+}
+
+body nav a:hover {
+    text-decoration: underline !important;
+}
